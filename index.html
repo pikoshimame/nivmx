@@ -1,0 +1,765 @@
+<style>
+    /* 打ち消し分 */
+
+    #section-date h2,
+    #section-date h2+p,
+    #section-location h2,
+    #section-location h2+p,
+    #section-location h2+p+p,
+    #section-location h2+p+p+p {
+        display: none;
+    }
+
+    /* Twitterカード */
+
+    .twitterCardS {
+        display: none;
+    }
+
+    /* 共通 */
+
+    .my-content a,
+    .my-content a:hover {
+        color: #E62781;
+    }
+
+    .my-content a.btn-primary {
+        color: #fff;
+    }
+
+    .my-content>.row {
+        padding-bottom: 12px;
+    }
+
+    .my-content>.row:nth-child(even) {
+        background-color: #eee;
+    }
+
+    @media (max-width: 767px) {
+        #contentBody .my-content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+
+    /* メインイメージ */
+
+    .my-content .row.row--mainImage {
+        padding-bottom: 0;
+    }
+
+    /* メインテキスト */
+
+    .my-content .row.row--mainText {
+        background: url('http://files.twvt.me/images/twinvite/eventimage/17501296_20171110221433.png') center center repeat;
+        color: #fff;
+        padding: 5em 0;
+    }
+
+    .my-content .row.row--mainText h2 {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 450px;
+    }
+
+    @media (max-width: 992px) {
+        .my-content .row.row--mainText h2 {
+            max-width: 400px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .my-content .row.row--mainText h2 {
+            max-width: 450px;
+        }
+    }
+
+    /* コンセプト */
+
+    .my-content .row.row.row--concept {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .my-content .row.row.row--concept h3 {
+        color: #E62781;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    /* 場所 */
+
+    .my-content .row.row--location iframe {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    /* 料金 */
+
+    .my-content .row.row--price table {
+        margin-bottom: 0;
+    }
+
+    .my-content .row.row--price table th {
+        width: 25%;
+    }
+
+    /* 出演者 */
+
+    .my-content .row.row--performer {
+        padding-bottom: 24px;
+    }
+
+    .my-content .row.row--performer a:hover {
+        text-decoration: none;
+    }
+
+    .my-content .row.row--performer a:hover .performerName {
+        text-decoration: underline;
+    }
+
+    .my-content .row.row--performer a:hover .performerImage {
+        opacity: .7;
+    }
+
+    .my-content .row.row--performer .modalBody {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #contentBody .my-content .row.row--performer .modalImage {
+        margin-bottom: 12px;
+        max-height: 260px;
+    }
+
+    @media (max-width: 767px) {
+        .my-content .row.row--performer .performerName {
+            font-size: 90%;
+        }
+        #contentBody .my-content .row.row--performer .modalDialog {
+            margin: 10px !important;
+        }
+    }
+
+    /* タイムテーブル */
+
+    .my-content .row.row--timetable table {
+        margin-bottom: 0;
+    }
+
+    .my-content .row.row--timetable table tbody th {
+        width: 25%;
+    }
+
+    .my-content .row.row--timetable table tbody th+td {
+        width: 25%;
+    }
+
+    @media (max-width: 767px) {
+        .my-content .row.row--timetable table tbody th {
+            width: 25%;
+        }
+        .my-content .row.row--timetable table tbody th+td {
+            width: 37.5%;
+        }
+    }
+
+    /* 注意事項 */
+
+    .my-content .row.row--notes .notes {
+        margin-bottom: 0;
+        padding-left: 15px;
+    }
+</style>
+<img class="twitterCardS" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171109233450.png" alt="">
+<div class="my-content">
+    <div class="row row--mainImage">
+        <!--<img src="http://placehold.jp/780x400.png" alt="">-->
+    </div>
+    <div class="row row--mainText">
+        <section class="col-md-12 text-center">
+            <h2>
+                <img src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022192101.png">
+            </h2>
+            <p class="h3">アニクラ × ボカロDJ</p>
+        </section>
+    </div>
+    <div class="row row--concept">
+        <section class="col-md-12">
+            <h2 class="h1">
+                <span class="fa fa-commenting">&nbsp;コンセプト</span>
+            </h2>
+            <h3 class="h3">ボカロDJ・VJがとにかく全力で<br class="visible-xs-block visible-sm-block">アニソンでやってみる！</h3>
+            <p>普段ボカロ系クラブイベントで活躍しているDJ・VJ陣が、とにかく<b>"全力"</b>でアニソンでプレイします！</p>
+            <p>普段とは一味違った、新しい刺激がここにあるかも…！？</p>
+        </section>
+    </div>
+    <div class="row row--date">
+        <section class="col-md-12">
+            <h2 class="h1">
+                <span class="fa fa-calendar">&nbsp;日時</span>
+            </h2>
+            <p>
+                <span class="h3">2017年11月23（木･祝）</span>
+                <br class="visible-xs-block">
+                <span class="h4">14:00〜20:00</span>
+            </p>
+        </section>
+    </div>
+    <div class="row row--location">
+        <section class="col-md-12">
+            <h2 class="h1">
+                <span class="fa fa-map-marker">&nbsp;場所</span>
+            </h2>
+            <a href="http://unique-laboratory.com/" target="_blank">unique LABORATORY</a>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.00402612496!2d139.70004101491105!3d35.701518536467205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2609755b9d%3A0xeb76392ece9b3776!2z44Om44OL44O844Kv44Op44Oc44Op44OI44Oq44O8!5e0!3m2!1sja!2sjp!4v1508589963459"
+                width="100%" height="250" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+        </section>
+    </div>
+    <div class="row row--price">
+        <section class="col-md-12">
+            <h2 class="h1">
+                <span class="fa fa-jpy">&nbsp;料金</span>
+            </h2>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>一般</th>
+                        <td>￥2,500（1D）</td>
+                    </tr>
+                    <tr>
+                        <th>参加表明</th>
+                        <td>￥2,000（1D）</td>
+                    </tr>
+                    <tr>
+                        <th>コスプレ</th>
+                        <td>￥1,500（1D）</td>
+                    </tr>
+                    <tr>
+                        <th>未成年</th>
+                        <td>￥1,500（1D）</td>
+                    </tr>
+                </tbody>
+            </table>
+            <ul class="list-unstyled small">
+                <li class="text-danger">
+                    <b>※IDチェックを行いますので、必ず身分証をお持ちください。</b>
+                </li>
+                <li class="text-muted">顔写真付き身分証明証がない場合は、保険証＋銀行キャッシュカード / クレジットカード等 2枚必要となります。</li>
+            </ul>
+        </section>
+    </div>
+    <div class="row row--performer">
+        <section class="col-md-12">
+            <h2 class="h1">
+                <span class="fa fa-users">&nbsp;出演者</span>
+            </h2>
+            <section class="row">
+                <h3 class="h3 col-md-12">
+                    <span class="fa fa-music">&nbsp;DJ</span>
+                </h3>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-1">
+                        <h4>
+                            <span class="performerName">alipey</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022214540.png" alt="alipey">
+                    </a>
+                    <div id="modal-1" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">alipey</p>
+                                    <p class="small">VOCALOID-ManiaX</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022214641.png" alt="alipey">
+                                    </div>
+                                    <p class="small">インターネットと共に育った都会派ゴブリン。学生時代はテレキャスターを相棒にバンド活動に明け暮れていたが、ひょんな事から秋葉原文化に魅了され、そのまま帰ってこなくなった。
+                                        <br> 秋葉原MOGRAにて偶数月の第3日曜日に開催されているVOCALOID ManiaX(通称ボカマニ)のスタッフとしてフロアの治安維持に努めていたところ、2015年12月オーガナイザーより「次からDJ」と通達され、突如レジデントDJへ転身、胃痛を訴えながらデビューを果たす。
+                                        <br>
+                                        <br> BPMという概念を知ってか知らずか、様々な音楽ジャンルを取り入れた独特なプレイを行う。動きもプレイスタイルも「節操ない」のが特徴。
+                                        <br>
+                                        <br> 好きな言葉は「お手柔らかに」
+                                        <br> 好きなタイプは「花京院典明」
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/alipeyoff" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-2">
+                        <h4>
+                            <span class="performerName">xNEOxGENESISx</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220504.png" alt="xNEOxGENESISx">
+                    </a>
+                    <div id="modal-2" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">xNEOxGENESISx</p>
+                                    <p class="small">SUKIMONO / Vocaloid Freak / Vocaloid Infinity / MIKUNIX</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220547.png" alt="xNEOxGENESISx">
+                                    </div>
+                                    <p class="small"> サングラスと帽子がトレードマークのボーカロPARTYミュージックを愛するDJ xNEOxGENESIS。2012年からサークルSUKIMONOのアート・ディレクターとしてOTAKU
+                                        MUSIC PARTYのクリエイター活動を開始し、ウェブデザイン、CDジャケのデザイン、グッズ製作、パーティースナップ撮影、曲作やリミックスを作り出している。
+                                        <br>
+                                        <br> 2014年からDJをはじめ、東京、千葉、名古屋、京都、大阪、茨城、など数多くのボカロDJパーティーでブチあげている。特に彼のボーカロイド・ダンスミュージックに対する愛は強く、今まで
+                                        sasakure.UK、さつきがてんこもり、すけっちP、ナユタン星人、BIGHEAD、DJ'TEKINA//SOMETHING、ATOLS、DJ-Joなど沢山の有名ボカロPとボカロDJイベントで共演して来た実績を持っている。2016の夏には、関東を代表する５つのボーカロイド・クラブイベントに全て出演したり、ボカリア、ボカロEDM、また役300名が集まったボカロオフ会イベント、ツナガルミライではGuest
+                                        DJとして2年連続で出演。2017年3月に主催した、初音ミクの10周年を祝う同人イベント、「MIKUNIX」では海外ボカロPや国内有名ボカロP＆DJ陣を集結し、グローバルなボカロ・イベントを大成功させた。2017年の夏にはアメリカで開催されたANIME
+                                        NEXTのボカロ枠で初音ミク召喚の映像制作にも携わる。
+                                        <br>
+                                        <br> 現在では、DJ以外にも著名ボカロPから若手ボカロPと最前線に立ち、作曲やイベント、様々なプロデュース活動もしている。
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/xNEOxGENESISx" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-3">
+                        <h4>
+                            <span class="performerName">のろ</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022223659.png" alt="のろ">
+                    </a>
+                    <div id="modal-3" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">のろ</p>
+                                    <p class="small">Vocaloid High</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022223726.png" alt="のろ">
+                                    </div>
+                                    <p class="small">ボカクラでコスプレしたり高まったり高まりすぎて土下座したりしています。
+                                        <br>去年の秋頃からボカロDJをはじめました。アニソンDJは初挑戦ですが頑張ります！
+                                        <br>好きなアニメは氷菓です。</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/gmor_tiabd" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-4">
+                        <h4>
+                            <span class="performerName">DJ ポンプ</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134634.png" alt="DJ ポンプ">
+                    </a>
+                    <div id="modal-4" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">DJ ポンプ</p>
+                                    <p class="small">ボカフリ！</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134702.png" alt="DJ ポンプ">
+                                    </div>
+                                    <p class="small">普段ボカロDJをやらせていただいているポンプです！
+                                        <br> ボカロDJばかりのアニソンイベントに興奮冷めやらぬ気持ちですヽ(*´∀｀)ノ
+                                        <br> のりはボカロと同じ勢いで、盛り上げますよー（≧ω≦）
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/ponpuramerame" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-5">
+                        <h4>
+                            <span class="performerName">谷やん</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220703.png" alt="谷やん">
+                    </a>
+                    <div id="modal-5" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">谷やん</p>
+                                    <p class="small">狂い咲きボーカロイド / BAR39の野菜おじさん</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220721.png" alt="谷やん">
+                                    </div>
+                                    <p class="small">年に数回、田舎の山から下ってボカロDJをする農家のおじさん。
+                                        <br> 古今東西のロックが大好物で男ウケばかりしてる。
+                                        <br> 5年ぶりにアニソンDJをするらしいです。
+                                        <br> アニソンでは大いに偏った老害感と趣味趣向にあふれるプレイをしそう(当社比) </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/tani_yang_" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-6">
+                        <h4>
+                            <span class="performerName">えが小屋</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134727.png" alt="えが小屋">
+                    </a>
+                    <div id="modal-6" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">えが小屋</p>
+                                    <p class="small">かっこいいアニソンがかかるイベント / 狂い咲きボーカロイド</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134753.png" alt="えが小屋">
+                                    </div>
+                                    <p class="small">本職はVJのはず。 レギュラーVOCALOIDイベント4本×レギュラーアニクライベント6本
+                                        <br> 両ジャンルを行ったり来たり、古典ロボから昨日放送の新アニメまで、劇中歌からキャラソンまで、海外アニメから鉄板アンセムまで、幅広い選曲で活躍(?)中。
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/EGA8yencoin" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-7">
+                        <h4>
+                            <span class="performerName">ピコシマメ</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220745.png" alt="ピコシマメ">
+                    </a>
+                    <div id="modal-7" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">ピコシマメ</p>
+                                    <p class="small">VOCALOID-ManiaX</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220808.png" alt="ピコシマメ">
+                                    </div>
+                                    <p class="small">学生時代からドラムを始め、様々なジャンルの音楽をバンドでプレイしてきたが、2009年にDJに転向し、現在に至る。
+                                        <br> 様々な音楽ジャンルを取り入れたDJプレイで、独自の世界観を展開。
+                                        <br> 特に最近ではVOCALOID楽曲を中心としたDJプレイが多く、関東各所で開催されている数多くのボカロクラブイベントへのゲスト出演経験を持つ。
+                                        <br> また、自身では2011年より秋葉原MOGRAにて、クラブミュージック×VOCALOIDをテーマにしたイベント「VOCALOID-ManiaX」をスタートする。
+                                        <br>
+                                        <br> その他、2013年には、リットーミュージック出版のDJ雑誌GROOVEの別冊「秋葉系DJガイド」にて「人気DJ×50人」のコーナーで紹介されたり、翌年には同じくGROOVEの別冊「秋葉系DJの教科書」にて「定番/名曲の選曲例」のコーナーでボカロの選曲例が掲載されるなどの経歴を持つ。
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/pikoshimame" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-8">
+                        <h4>
+                            <span class="performerName">まぁ</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134817.png" alt="まぁ">
+                    </a>
+                    <div id="modal-8" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">まぁ</p>
+                                    <p class="small">Vocaloid High / VOCALOID-infinity∞-</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134836.png" alt="まぁ">
+                                    </div>
+                                    <p class="small">好きな曲のジャンルは早くてかっこいい曲です。
+                                        <br> 好きなアニメはとらドラ!です。
+                                        <br> よろしくお願いいたします。
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/makuchiso" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-9">
+                        <h4>
+                            <span class="performerName">悠雨</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134857.png" alt="悠雨">
+                    </a>
+                    <div id="modal-9" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">悠雨</p>
+                                    <p class="small">私たちもUTAGEに出たい！</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171028134915.png" alt="悠雨">
+                                    </div>
+                                    <p class="small">2013年よりボカロDJとして活動開始。その後2016年よりじわじわとアニソンDJを開始するも、アニクラに人脈を持たないことに気付き途方に暮れながら、それでもコツコツと練習中。
+                                        <br> 高まり至上主義で頑張ります！
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/yuu_cream818" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="row">
+                <h3 class="h3 col-md-12">
+                    <span class="fa fa-video-camera">&nbsp;VJ</span>
+                </h3>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-10">
+                        <h4>
+                            <span class="performerName">えいやん</span>
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022223753.png" alt="えいやん">
+                    </a>
+                    <div id="modal-10" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">えいやん</p>
+                                    <p class="small">ボカフリ！ / VOCALOID-ManiaX / Vocaloid High</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022223833.png" alt="えいやん">
+                                    </div>
+                                    <p class="small">2011年よりボカロVJとして活動を開始。
+                                        <br>幅広いジャンルを手がけており、都内で開催されているボカロイベントに数多く出演している。
+                                        <br>なお、アニソンVJとしての出演経験はほとんどない。
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/eiyan98" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-md-4 col-sm-6 col-xs-6">
+                    <a href="#" data-toggle="modal" data-target="#modal-11">
+                        <h4>
+                            <span class="performerName">そる</span>&nbsp;
+                            <span class="small fa fa-file-text-o"></span>
+                        </h4>
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220830.png" alt="そる">
+                    </a>
+                    <div id="modal-11" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog modalDialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span class="h1" aria-hidden="true">×</span>
+                                    </button>
+                                    <p class="h2 modal-title">そる</p>
+                                    <p class="small">Xi-lium / Vocloid High / BECONE</p>
+                                </div>
+                                <div class="modal-body modalBody">
+                                    <div class="text-center">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171022220958.png" alt="そる">
+                                    </div>
+                                    <p class="small">2015年にVOCALOID楽曲を中心としたVJ活動を開始。
+                                        <br> 同年秋にサイリウムガールとしてXi-liumに所属。サイリウムガール活動をしていくうちにアニソンへの興味と好きが爆発。
+                                        <br> アニソンVJへの強い憧れを抱くようになり、2016年夏頃にアニソンでもVJをするようになる。
+                                        <br> 好きなキャラクターなどを見かけると手を合わせてしまう癖を直したいと思いつつも今日も都内のどこかのクラブのスクリーンにお祈りをしている。
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="https://twitter.com/solsol410" target="_blank" class="btn btn-primary">
+                                        <span class="fa fa-twitter">Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </div>
+    <div class="row row--timetable">
+        <section class="col-md-12">
+            <h2 class="h1">
+                <span class="fa fa-clock-o">&nbsp;タイムテーブル</span>
+            </h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">時間</th>
+                        <th scope="col">DJ</th>
+                        <th scope="col">VJ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>14:00
+                            <br class="visible-xs-block">〜14:40</th>
+                        <td>悠雨</td>
+                        <td>えいやん</td>
+                    </tr>
+                    <tr>
+                        <th>14:40
+                            <br class="visible-xs-block">〜15:20</th>
+                        <td>DJ ポンプ</td>
+                        <td>そる</td>
+                    </tr>
+                    <tr>
+                        <th>15:20
+                            <br class="visible-xs-block">〜16:00</th>
+                        <td>alipey</td>
+                        <td>えいやん</td>
+                    </tr>
+                    <tr>
+                        <th>16:00
+                            <br class="visible-xs-block">〜16:40</th>
+                        <td>谷やん</td>
+                        <td>そる</td>
+                    </tr>
+                    <tr>
+                        <th>16:40
+                            <br class="visible-xs-block">〜17:20</th>
+                        <td>ピコシマメ</td>
+                        <td>えが小屋</td>
+                    </tr>
+                    <tr>
+                        <th>17:20
+                            <br class="visible-xs-block">〜18:00</th>
+                        <td>のろ</td>
+                        <td>えいやん</td>
+                    </tr>
+                    <tr>
+                        <th>18:00
+                            <br class="visible-xs-block">〜18:40</th>
+                        <td>xNEOxGENESISx</td>
+                        <td>そる</td>
+                    </tr>
+                    <tr>
+                        <th>18:40
+                            <br class="visible-xs-block">〜19:20</th>
+                        <td>まぁ</td>
+                        <td>そる</td>
+                    </tr>
+                    <tr>
+                        <th>19:20
+                            <br class="visible-xs-block">〜20:00</th>
+                        <td>えが小屋</td>
+                        <td>えいやん</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <div class="row row--notes">
+        <section class="col-md-12">
+            <h2 class="h1">
+                <span class="fa fa-exclamation-triangle">&nbsp;注意事項</span>
+            </h2>
+            <div class="list-group-item">
+                <ul class="small notes">
+                    <li>20歳未満の喫煙・飲酒や法律で禁止されている行為は固くお断りします。</li>
+                    <li>男女更衣室に荷物を置いたままにせず、ロッカーやクロークをご利用下さい。</li>
+                    <li>ロッカーをご利用の際には必ず鍵をかけてご利用下さい。</li>
+                    <li>飲食物の持ち込みは禁止させて頂いております。</li>
+                    <li>他のお客様のご迷惑となる行為、過度なナンパ行為等は禁止させて頂いております。場合によっては、退場して頂く場合がございます。ご了承下さい。</li>
+                    <li>貴重品は自己管理でお願いいたします。万が一紛失された場合、こちらでは責任を負いかねますのでご注意下さい。</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
