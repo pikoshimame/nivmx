@@ -9,9 +9,16 @@
     #section-location h2+p+p+p {
         display: none;
     }
-    #section-footer,
-    #section-footer a {
-        color: #fff!important;
+    #section-container,
+    #section-main {
+        background-color: #eee;
+    }
+
+    @media (min-width: 768px) {
+        #section-footer,
+        #section-footer a {
+            color: #fff!important;
+        }
     }
 
     /* Twitterカード */
@@ -86,12 +93,12 @@
     }
 
     .my-content .row.row--price table th {
-        width: 25%;
+        width: 30%;
     }
 
     /* 出演者 */
 
-    .my-content .row.row--performer {
+    .my-content .row.row--performer .row {
         padding-bottom: 24px;
     }
 
@@ -105,6 +112,10 @@
 
     .my-content .row.row--performer a:hover .performerImage {
         opacity: .7;
+    }
+
+    .my-content .row.row--performer .modal-content {
+        background-color: #eee;
     }
 
     .my-content .row.row--performer .modalBody {
@@ -155,8 +166,14 @@
         margin-bottom: 0;
         padding-left: 15px;
     }
+
+    @media (max-width: 767px) {
+        .my-content .row.row--notes {
+            padding-bottom: 24px;
+        }
+    }
 </style>
-<img class="twitterCardS" src="" alt="">
+<img class="twitterCardS" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102125702.png" alt="">
 <div class="my-content">
     <div class="row row--mainImage">
         <img src="http://files.twvt.me/images/twinvite/eventimage/17501296_20171231130203.png" alt="">
@@ -222,7 +239,7 @@
                 <span class="fa fa-users">&nbsp;出演者</span>
             </h2>
             <section class="row">
-                <h3 class="h3 col-md-12">
+                <h3 class="h4 col-md-12">
                     <span class="fa fa-music">&nbsp;GUEST DJ</span>
                 </h3>
                 <section class="col-md-4 col-sm-6 col-xs-6">
@@ -231,7 +248,7 @@
                             <span class="performerName">EasyPop</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="EasyPop">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102130449.png" alt="EasyPop">
                     </a>
                     <div id="modal-1" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -244,7 +261,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="alipey">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102125721.png" alt="EasyPop">
                                     </div>
                                     <p class="small">
                                         作曲/作詞/編曲家/ボカロP<br>
@@ -255,8 +272,8 @@
                                         スウィートタイム<br>
                                         ハイファイレイヴァー<br>
                                         etc<br>
-                                        <a href="http://goo.gl/P3ali8">niconico</a><br>
-                                        <a href="http://urx.nu/7Mtc">YouTube</a>
+                                        <a href="http://goo.gl/P3ali8" target="_blank">niconico</a><br>
+                                        <a href="http://urx.nu/7Mtc" target="_blank">YouTube</a>
                                     </p>
                                 </div>
                                 <div class="modal-footer">
@@ -270,7 +287,7 @@
                 </section>
             </section>
             <section class="row">
-                <h3 class="h3 col-md-12">
+                <h3 class="h4 col-md-12">
                     <span class="fa fa-music">&nbsp;VOCALOID-ManiaX</span>
                 </h3>
                 <section class="col-md-4 col-sm-6 col-xs-6">
@@ -279,7 +296,7 @@
                             <span class="performerName">Megsis</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="Megsis">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102130700.png" alt="Megsis">
                     </a>
                     <div id="modal-2" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -289,17 +306,19 @@
                                         <span class="h1" aria-hidden="true">×</span>
                                     </button>
                                     <p class="h2 modal-title">Megsis</p>
-                                    <p class="small">どらむん町内会 / AQUANAUTS / QLoveDolls</p>
+                                    <p class="small">AQUANAUTS / QLoveDolls</p>
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="Megsis">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102130606.png" alt="Megsis">
                                     </div>
                                     <p class="small">
                                         歌う女性ドラムンベースDJ。<br>
-                                        DJ中に即興のスキャットで歌うことを得意とし、ボカロ・アニソンからメインストリームまで、ドラムンベースを軸に活動。<br>
-                                        2011年3月からニコニコ生放送でDJ放送をしていたが、同年10月に秋葉原MOGRAにて現場デビュー。ボカロ×クラブミュージックをコンセプトに掲げる「VOCALOID-ManiaX」、そしてドラムンベースオンリーイベント「どらむん町内会」 のレジデントを務める。MC CARDZ主催の渋谷LOUNGE NEOにて開催されている「BARRICADE」にも参加。Tokyo Audio Waffleシリーズでも一躍人気となった「en;Dolphin Records」に所属するヴォーカリストでもある。<br>
-                                        暴力的な音が鳴り響く女子イベント「QLoveDolls」、充電系平日ラウンジイベント「Plug Lounge」、リキッドファンクイベント「AQUANAUTS」、そしてメガネ溺愛イベント「MEGANE」のオーガナイザー。
+                                        DJ中に即興のスキャットで歌うことを得意とし、ボカロ・アニソン楽曲も含め、ドラムンベースを軸に選曲する。<br>
+                                        2011年3月からニコニコ生放送でDJ放送開始、同年10月に秋葉原MOGRAにて現場デビュー。<br>
+                                        ボカロ×クラブミュージックをコンセプトに掲げる「VOCALOID-ManiaX」、ドラムンベースオンリーイベント「どらむん町内会」のレジデントを務める。<br>
+                                        攻撃的な音が鳴り響く女子イベント「QLoveDolls」、リキッドファンクイベント「AQUANAUTS」、そしてメガネ溺愛イベント「MEGANE」のオーガナイザー。<br>
+                                        Tokyo Audio Waffleシリーズでも一躍人気となった「en;Dolphin Records」に所属するヴォーカリストでもある。
                                     </p>
                                 </div>
                                 <div class="modal-footer">
@@ -317,7 +336,7 @@
                             <span class="performerName">sakage</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="sakage">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102130753.png" alt="sakage">
                     </a>
                     <div id="modal-3" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -331,7 +350,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="sakage">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102130735.png" alt="sakage">
                                     </div>
                                     <p class="small">
                                         学生時代にユーロビートやハードコアテクノに触れる事によりクラブミュージックへの興味をわかせる。次第に自身もDJを始め、Maniac LoveやSpace Lab YELLOWでのテクノやハウスミュージックに衝撃を受け、次第に自身のDJもハウスミュージックに傾倒することとなる。<br>
@@ -354,7 +373,7 @@
                             <span class="performerName">π</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="π">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102130907.png" alt="π">
                     </a>
                     <div id="modal-4" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -367,7 +386,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="π">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102130834.png" alt="π">
                                     </div>
                                     <p class="small">
                                         2011年より活動開始。<br>
@@ -393,7 +412,7 @@
                             <span class="performerName">ピコシマメ</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="ピコシマメ">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131019.png" alt="ピコシマメ">
                     </a>
                     <div id="modal-5" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -406,7 +425,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="ピコシマメ">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131000.png" alt="ピコシマメ">
                                     </div>
                                     <p class="small">
                                         学生時代からドラムを始め、様々なジャンルの音楽をバンドでプレイしてきたが、2009年にDJに転向し、現在に至る。<br>
@@ -432,7 +451,7 @@
                             <span class="performerName">小原</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="小原">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131115.png" alt="小原">
                     </a>
                     <div id="modal-6" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -446,12 +465,16 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="小原">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131053.png" alt="小原">
                                     </div>
                                     <p class="small">
-                                        1990年生まれ。ハウス、エレクトロ中心のクラブ系ボカロDJシーンにおいて、R∠Bやヒップホップを中心したボーカロイド楽曲をスピン。<br>
-                                        自身のルーツであるヒップホップDJとして、スクラッチや2枚使いを積極的に用いたプレイスタイルが特徴。<br>
-                                        インターネットと現場を股に掛けるDJ,トラックメイカー集団OSFCに所属。若さとアルコールだけで突っ走り機材と記憶を失くす21歳。
+                                        「スクラッチャー・一般人代表」<br>
+                                        1990年生まれ。2009年よりDJを始める。<br>
+                                        ルーツであるヒップホップDJとして、スクラッチや2枚使い、ブレンドミックス等を積極的に用いた『わかりやすく、トリッキー』なスタイルを武器としつつ、活動範囲を限定しないニュートラルなスタンスで多種多様なシーンに適応する。<br>
+                                        <br>
+                                        定期開催している日本語ラップオンリーパーティや、ボーカロイド系クラブイベントでレギュラーDJを勤めるほか、Womb、VISION、Asiaを始めとする都内クラブにてヒップホップスタイルを武器に様々なイベントに出演。<br>
+                                        クラブプレイだけでなくCD音源へのスクラッチ参加やミックステープのホストDJ、ロングセットライブのバックDJなどもこなしプレイヤーからの信頼も厚い。<br>
+                                        インターネットとクラブを繋ぐハイブリッドDJ集団OSFCにも所属している。
                                     </p>
                                 </div>
                                 <div class="modal-footer">
@@ -469,7 +492,7 @@
                             <span class="performerName">alipey</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="alipey">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131213.png" alt="alipey">
                     </a>
                     <div id="modal-7" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -482,7 +505,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="alipey">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131150.png" alt="alipey">
                                     </div>
                                     <p class="small">
                                         【美少女がいれば世の中何だってええねん】と信じて疑わない、永遠のやんちゃGIRL。<br>
@@ -509,7 +532,7 @@
                             <span class="performerName">tak</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="tak">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131309.png" alt="tak">
                     </a>
                     <div id="modal-8" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -522,7 +545,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="tak">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131254.png" alt="tak">
                                     </div>
                                     <p class="small">
                                         空間・印刷物のデザイン、写真を中心に制作活動をはじめ即時性の高い表現を模索していく中でVJに巡り、2011年より本格的にVJでの活動を開始する。<br>
@@ -547,7 +570,7 @@
                             <span class="performerName">えいやん</span>&nbsp;
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="えいやん">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131444.png" alt="えいやん">
                     </a>
                     <div id="modal-9" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -561,7 +584,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="えいやん">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131424.png" alt="えいやん">
                                     </div>
                                     <p class="small">
                                         2011年よりボカロVJとして活動を開始。<br>
@@ -580,7 +603,7 @@
                 </section>
             </section>
             <section class="row">
-                <h3 class="h3 col-md-12">
+                <h3 class="h4 col-md-12">
                     <span class="fa fa-music">&nbsp;ニーガタボーカロイドパーティー</span>
                 </h3>
                 <section class="col-md-4 col-sm-6 col-xs-6">
@@ -589,7 +612,7 @@
                             <span class="performerName">syms</span>
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="syms">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131541.png" alt="syms">
                     </a>
                     <div id="modal-10" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -602,7 +625,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="syms">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131524.png" alt="syms">
                                     </div>
                                     <p class="small">
                                         約８年前にパソコンを手に入れ、引きこもりながらニコニコ動画の再生ボタンを押し続けた結果無事にVOC@LOID好きの道へ<br>
@@ -627,7 +650,7 @@
                             <span class="performerName">MIRU</span>
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="MIRU">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131636.png" alt="MIRU">
                     </a>
                     <div id="modal-11" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -641,7 +664,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="MIRU">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131617.png" alt="MIRU">
                                     </div>
                                     <p class="small">
                                         「悪ノ娘」で鏡音リンに一声惚れ。ニコニコ動画を徘徊し始め、いつの間にかコスプレをするように。その後地元のアニクラ常連を経て、あにきゅーぶ！ガールとしてお酒を作る係になる。2016年11月にはDJデビュー。<br>
@@ -664,7 +687,7 @@
                             <span class="performerName">ログ</span>
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="ログ">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131727.png" alt="ログ">
                     </a>
                     <div id="modal-12" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -678,7 +701,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="ログ">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131711.png" alt="ログ">
                                     </div>
                                     <p class="small">
                                         女性声優さんのことしか考えたくない。
@@ -699,7 +722,7 @@
                             <span class="performerName">SHOOON</span>
                             <span class="small fa fa-file-text-o"></span>
                         </h4>
-                        <img class="performerImage" src="http://placehold.jp/700x700.png" alt="SHOOON">
+                        <img class="performerImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131829.png" alt="SHOOON">
                     </a>
                     <div id="modal-13" class="modal fade" tabindex="-1" role="dialog">
                         <div class="modal-dialog modalDialog" role="document">
@@ -713,7 +736,7 @@
                                 </div>
                                 <div class="modal-body modalBody">
                                     <div class="text-center">
-                                        <img class="modalImage" src="http://placehold.jp/670x520.png" alt="SHOOON">
+                                        <img class="modalImage" src="http://files.twvt.me/images/twinvite/eventimage/17501296_20180102131808.png" alt="SHOOON">
                                     </div>
                                     <p class="small">
                                         ダンスを通じて興味本意でやってみたいと思ったのをキッカケに2011年頃にDJとしてのキャリアをスタート。<br>
