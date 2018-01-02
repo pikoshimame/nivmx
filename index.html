@@ -79,6 +79,16 @@
         font-weight: bold;
     }
 
+    /* 日時 */
+
+    .my-content .row.row--date table {
+        margin-bottom: 0;
+    }
+
+    .my-content .row.row--date table th {
+        width: 90px;
+    }
+
     /* 場所 */
 
     .my-content .row.row--location iframe {
@@ -93,7 +103,7 @@
     }
 
     .my-content .row.row--price table th {
-        width: 30%;
+        width: 140px;
     }
 
     /* 出演者 */
@@ -193,12 +203,23 @@
             <h2 class="h1">
                 <span class="fa fa-calendar">&nbsp;日時</span>
             </h2>
-            <p>
-                <span class="h3">2018年3月17（土）</span>
-                <br class="visible-xs-block">
-                <span class="h4">13:00〜21:00</span>
-                <span class="h5">（START 13:30）</span>
-            </p>
+            <p class="h3">2018年3月17日（土）</p>
+            <table class="table">
+                <tbody>
+                    <tr>
+                        <th>OPEN</th>
+                        <td>13:00</td>
+                    </tr>
+                    <tr>
+                        <th>START</th>
+                        <td>13:30</td>
+                    </tr>
+                    <tr>
+                        <th>CLOSE</th>
+                        <td>21:00</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </div>
     <div class="row row--location">
@@ -226,7 +247,7 @@
                         <td>￥2,000（1D）</td>
                     </tr>
                     <tr>
-                        <th>フライヤー</th>
+                        <th>フライヤー持参</th>
                         <td>￥2,000（1D）</td>
                     </tr>
                 </tbody>
